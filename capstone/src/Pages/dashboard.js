@@ -2,9 +2,11 @@ import React from "react";
 // node.js library that concatenates classes (strings)
 import classnames from "classnames";
 // javascipt plugin for creating charts
-import Chart from "chart.js";
+import Chart from "../variables/charts";
 // react plugin used to create charts
 import { Line, Bar } from "react-chartjs-2";
+console.log("Inside dashboard");
+
 // reactstrap components
 import {
   Button,
@@ -21,16 +23,16 @@ import {
   Col,
 } from "reactstrap";
 // layout for this page
-import Admin from "layouts/Admin.js";
+import Admin from "./Admin";
 // core components
 import {
   chartOptions,
   parseOptions,
   chartExample1,
   chartExample2,
-} from "variables/charts.js";
+} from "../variables/charts";
 
-import Header from "components/Headers/Header.js";
+import Header from "../components/Headers/Header";
 
 const Dashboard = (props) => {
   const [activeNav, setActiveNav] = React.useState(1);

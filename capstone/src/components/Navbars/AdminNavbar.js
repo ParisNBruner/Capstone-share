@@ -23,7 +23,7 @@ function AdminNavbar({ brandText }) {
     <>
       <Navbar className="navbar-top navbar-dark" expand="md" id="navbar-main">
         <Container fluid>
-          <Link href="/admin/dashboard">
+          <Link href="../../Pages/dashboard.js">
             <a className="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block">
               {brandText}
             </a>
@@ -47,7 +47,7 @@ function AdminNavbar({ brandText }) {
                   <span className="avatar avatar-sm rounded-circle">
                     <img
                       alt="..."
-                      src={require("assets/img/theme/team-4-800x800.jpg")}
+                      src={require("../../assets/img/theme/team-4-800x800.jpg")}
                     />
                   </span>
                   <Media className="ml-2 d-none d-lg-block">
@@ -61,25 +61,25 @@ function AdminNavbar({ brandText }) {
                 <DropdownItem className="noti-title" header tag="div">
                   <h6 className="text-overflow m-0">Welcome!</h6>
                 </DropdownItem>
-                <Link href="/admin/profile">
+                <Link href="../">
                   <DropdownItem>
                     <i className="ni ni-single-02" />
                     <span>My profile</span>
                   </DropdownItem>
                 </Link>
-                <Link href="/admin/profile">
+                <Link href="../../Pages/profile.js">
                   <DropdownItem>
                     <i className="ni ni-settings-gear-65" />
                     <span>Settings</span>
                   </DropdownItem>
                 </Link>
-                <Link href="/admin/profile">
+                <Link href="../../Pages/profile.js">
                   <DropdownItem>
                     <i className="ni ni-calendar-grid-58" />
                     <span>Activity</span>
                   </DropdownItem>
                 </Link>
-                <Link href="/admin/profile">
+                <Link href="../../Pages/profile.js">
                   <DropdownItem>
                     <i className="ni ni-support-16" />
                     <span>Support</span>

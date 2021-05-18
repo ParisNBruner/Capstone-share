@@ -1,4 +1,3 @@
-/*eslint-disable*/
 import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -126,11 +125,6 @@ function Sidebar(props) {
             <DropdownToggle nav>
               <Media className="align-items-center">
                 <span className="avatar avatar-sm rounded-circle">
-                  <img
-                    alt="..."
-s                    src={require("")}
-
-                  />
                 </span>
               </Media>
             </DropdownToggle>
@@ -140,25 +134,25 @@ s                    src={require("")}
               </DropdownItem>
               /Users/parisbruner/WebstormProjects/Capstone/capstone/src/components/Sidebar/Sidebar.js
               /Users/parisbruner/WebstormProjects/Capstone/capstone/src/Pages/profile.js
-              <Link href="../Pages/profile">
+              <Link href="../../Pages/profile.js">
                 <DropdownItem>
                   <i className="ni ni-single-02" />
                   <span>My profile</span>
                 </DropdownItem>
               </Link>
-              <Link href="../admin/profile">
+              <Link href="../../Pages/profile.js">
                 <DropdownItem>
                   <i className="ni ni-settings-gear-65" />
                   <span>Settings</span>
                 </DropdownItem>
               </Link>
-              <Link href="/admin/profile">
+              <Link href="../../Pages/profile.js">
                 <DropdownItem>
                   <i className="ni ni-calendar-grid-58" />
                   <span>Activity</span>
                 </DropdownItem>
               </Link>
-              <Link href="/admin/profile">
+              <Link href="../../Pages/profile.js">
                 <DropdownItem>
                   <i className="ni ni-support-16" />
                   <span>Support</span>

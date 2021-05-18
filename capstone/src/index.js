@@ -7,6 +7,8 @@ import firebase from 'firebase/app'
 import Admin from "./Pages/Admin";
 
 
+
+
 // Your web app's Firebase configuration
 var firebaseConfig = {
     apiKey: "AIzaSyDFUH2LbvaEq6Eo_wb_DzpwGlAbPfPAsm0",
@@ -22,9 +24,10 @@ firebase.initializeApp(firebaseConfig)
 
 export default function Index() {
     React.useEffect(() => {
-      Router.push("/admin/dashboard");
+      Router.push("./Pages/dashboard");
         // <Admin/>
     });
+
 
     return <div />;
 }
